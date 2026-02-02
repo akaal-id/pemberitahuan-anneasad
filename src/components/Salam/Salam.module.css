@@ -1,0 +1,113 @@
+.section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; /* space-y-10 */
+  padding: 0 0 8rem 0; /* Removed horizontal padding to allow full width image */
+}
+
+.bismillah {
+  font-family: var(--font-lora);
+  font-size: clamp(1.5rem, 2vw, 3rem); /* 3xl */
+  color: var(--color-gold-accent);
+  padding: 0 2rem;
+  margin-top: -4rem;
+}
+
+@media (min-width: 768px) {
+  .bismillah {
+    font-size: 3rem; /* 5xl */
+  }
+}
+
+.greetingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
+  max-width: 32rem; /* max-w-lg */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.greetingTitle {
+  font-family: var(--font-lora);
+  font-size: clamp(1.8rem, 3vw, 3rem); /* 2xl */
+  color: var(--color-navy-deep);
+}
+
+.greetingText {
+  font-family: var(--font-mulish);
+  color: var(--color-navy-deep);
+  line-height: 1.4;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 300;
+}
+
+.verseContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--color-gold-accent);
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.imageContainer {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.imageGradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, var(--color-white));
+  pointer-events: none;
+}
+
+.verseText {
+  font-family: var(--font-lora);
+  font-size: clamp(0.875rem, 2vw, 1rem); /* lg */
+  font-style: italic;
+  color: rgba(28, 49, 99, 0.9); /* navy-primary/90 */
+  line-height: 2;
+}
+
+@media (min-width: 768px) {
+  .verseText {
+    font-size: clamp(1rem, 2vw, 1.25rem); /* xl */
+  }
+}
+
+.verseReference {
+  font-family: var(--font-mulish);
+  font-size: 0.75rem; /* xs */
+  letter-spacing: 0.2em;
+  color: #D6B585; /* gold-accent */
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .verseReference {
+    font-size: 0.875rem; /* sm */
+  }
+}

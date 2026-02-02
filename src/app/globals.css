@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-lora);
+  --font-sans: var(--font-mulish);
+
+  --color-navy-primary: #1C3163;
+  --color-navy-deep: #00071B;
+  --color-gold-accent: #D6B585;
+  --color-sand: #D6B585;
+  --color-white: #FEFEFE;
+}
+
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-white text-navy-deep antialiased;
+    font-family: var(--font-mulish);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-lora);
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .mask-gradient-bottom {
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  }
+}
