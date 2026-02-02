@@ -1,15 +1,15 @@
 .section {
   text-align: center;
-  padding-top: 8rem; /* py-16 */
-  padding-bottom: 8rem;
+  padding: 24px;
   height: 100svh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-  height: 580px;
+  height: 100%;
   background-color: #f8fafc; /* slate-50 */
   border: 1px solid rgba(214, 181, 133, 0.2); /* gold-accent/20 */
   padding: 4rem 2rem 4rem 2rem; /* p-8 */
@@ -40,18 +40,12 @@
 
 .logoContainer {
   z-index: 1;
-  position: absolute;
-  top: 96px;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
   border-radius: 999px;
-  background-color: #f8fafc;
-  border: 1px solid #d6b58533;
-  width: 132px;
-  height: 132px;
+  width: auto;
+  height: auto;
 
 }
 
@@ -59,7 +53,7 @@
   z-index: 3;
   width: auto;
   height: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   max-width: 96px; /* Adjust based on preference */
   max-height: 96px;
   object-fit: contain;
@@ -67,12 +61,12 @@
 
 .cover{
   position: absolute;
-  top: 206px;
+  top: 109px;
   left: 50%;
   transform: translateX(-50%);
   width: 56px;
   height: 16px;
-  background-color: #f8fafc;
+  /*background-color: #f8fafc;*/
   z-index: 4;
 }
 

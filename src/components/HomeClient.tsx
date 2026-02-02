@@ -51,7 +51,6 @@ export function HomeClient({ guestName }: HomeClientProps) {
           <Notice />
           <Salam />
           <Profile />
-          <Events />
           <Adab />
           <Gift />
           <Footer />
