@@ -21,12 +21,10 @@ export function Adab() {
         </div>
         
         <div className="space-y-6">
-           <h2 className={styles.title}>Adab & Doa</h2>
+           
            
            <div className={styles.text}>
-            <p>
-              Tanpa mengurangi rasa hormat, dimohon kepada Bapak/Ibu/Saudara/i tamu undangan agar berkenan hadir dengan berpakaian sopan dan menutup aurat.
-            </p>
+            
             
             <div className={styles.prayerContainer}>
               <p className={styles.prayerTitle}>Doa untuk Pengantin</p>
